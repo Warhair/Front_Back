@@ -20,6 +20,7 @@ class Controller
 
     constructor()
     {
+      console.log(VEGPONT_ALAP);
         this.#dataService = new DataService(VEGPONT_ALAP);
         this.#urlapView = new UrlapView($("#urlap"), {
             nev: new TextInputMezoLeiro("Név", "Név", "1 nagybetűvel kezdődik, legalább 3 karakter, legfeljebb 15", "[A-Z][a-z]{2,15}"),
